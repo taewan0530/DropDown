@@ -15,7 +15,7 @@ public typealias ConfigurationClosure = (Index, String) -> String
 private typealias ComputeLayoutTuple = (x: CGFloat, y: CGFloat, width: CGFloat, offscreenHeight: CGFloat)
 
 /// A Material Design drop down in replacement for `UIPickerView`.
-public final class DropDown: UIView {
+public class DropDown: UIView {
 	
 	//TODO: handle iOS 7 landscape mode
 	
