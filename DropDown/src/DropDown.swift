@@ -55,7 +55,7 @@ public final class DropDown: UIView {
 	//MARK: UI
 	private let dismissableView = UIView()
 	private let tableViewContainer = UIView()
-	private let tableView = UITableView()
+	public let tableView = UITableView()
 	
 	/// The view to which the drop down will displayed onto.
 	public weak var anchorView: UIView? {
