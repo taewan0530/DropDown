@@ -540,18 +540,22 @@ extension DropDown {
 		if hidden {
 			return
 		}
-		
-		UIView.animateWithDuration(
-			DPDConstant.Animation.Duration,
-			delay: 0,
-			options: DPDConstant.Animation.ExitOptions,
-			animations: { [unowned self] in
-				self.setHiddentState()
-			},
-			completion: { [unowned self] finished in
-				self.hidden = true
-				self.removeFromSuperview()
-			})
+        
+        self.setHiddentState()
+        self.hidden = true
+        self.removeFromSuperview()
+        
+//		UIView.animateWithDuration(
+//			DPDConstant.Animation.Duration,
+//			delay: 0,
+//			options: DPDConstant.Animation.ExitOptions,
+//			animations: { [unowned self] in
+//				self.setHiddentState()
+//			},
+//			completion: { [unowned self] finished in
+//				self.hidden = true
+//				self.removeFromSuperview()
+//			})
 	}
 	
 	private func cancel() {
